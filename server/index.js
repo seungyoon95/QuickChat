@@ -14,7 +14,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   // URLs allowed to make request
   cors: {
-    origin: ["http://localhost:3000", "https://quick-chat.seungyoon-lee.com/"],
+    origin: ["http://localhost:3000", "https://quick-chat.seungyoon-lee.com"],
     methods: ["GET", "POST"],
   },
 });
