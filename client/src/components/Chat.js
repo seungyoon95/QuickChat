@@ -6,7 +6,9 @@ import { auth } from "../firebase";
 import "./css/Chat.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const socket = io.connect("http://localhost:3001");
+// const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://quickchatapi.onrender.com");
+
 
 function Chat() {
   const [roomName, setRoomName] = useState("");
